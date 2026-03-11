@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+ul,ol,li{
+  list-style: none;
+}
+body{
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ecf1f8;
+  color: black;
+}
+
+section{
+  margin: 30px 10%;
+}
+/* ----------------header-------------- */
+.header-2,
+header{
+  display: flex;
+  justify-content: space-between;
+  background: blue;
+  color: white;
+  padding: 15px 40px;
+  position: relative;
+  align-items: center;
+}
+.nav-link:hover a{
+  color: rgb(246, 223, 16);
+}
+.destop{
+  display: flex;
+  gap: 40px;
+}
+.menuBTN{
+  display: none;
+  background: unset;
+  color: white;
+  font-size: 30px;
+}
+.mobile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.729);
+}
+.mobile li{
+  margin: 5px 30px;
+  padding-left: 10px;
+}
+.mobile li:hover {
+  background: blue;
+}
+/* dorpdown */
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+/* btn */
+.btn{
+    border: none;
+    outline: none;
+    background: unset;
+}
+.btn a{
+  border: none;
+  background: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: 0.5px solid black;
+  box-shadow:  0 0 1px 1px rgba(0, 0, 0, 0.257);
+}
+.btn a:hover{
+  background: black;
+  color: white;
+  transition: all 1s ease;
+}
+.fb{
+  display: flex;
+  gap: 30px;
+}
+.fb input{
+  padding: 10px ;
+  margin:  10px;
+}
+.searchbtn{
+  background: black;
+  color: white;
+  padding: 10px 20px;
+}
+.searchbtn:hover{
+  background: blue;
+    transition: all 1s ease;
+}
+.header-2{
+  background: white;
+}
+.more{
+  position: absolute;
+  top: 30px;
+  background: black;
+  z-index: 44;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid wheat;
+  padding: 10px;
+}
+.more li{
+  padding: 2px 10px;
+}
+.more li:hover{
+  background: blue;
+}
+
+@media screen and (max-width:900px) {
+    .menuBTN{
+      display: block;
+      border: none;
+    }
+    .logo,
+    .destop{
+      display: none;
+    }
+    .fb{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      }
+      .searchbtn{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+}
+
+
+
+/* ----------------footer-------------- */
+footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(200px ,1fr));
+  gap: 20px;
+  padding: 10%;
+  background: white;
+}
+.footer-col h3{
+  padding: 20px 0;
+}
+.footer-col li{
+  margin-top: 10px;
+}
+footer a{
+  color: rgba(0, 0, 0, 0.528);
+  padding: 2px 10px;
+  display: block;
+}
+footer a:hover{
+  color: white;
+  background: blue;
+}
