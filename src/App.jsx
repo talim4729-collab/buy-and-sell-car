@@ -12,7 +12,6 @@ import Seller from './pages/Seller';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
        <Routes>
         <Route path='/' element={<Layout />}>
          <Route index element={<Home/>}/>
@@ -24,7 +23,6 @@ const App = () => {
          <Route path='/seller' element={<Seller />} />
         </Route>
        </Routes>
-      </BrowserRouter>
     </>
   );
 };
